@@ -1,7 +1,8 @@
 <template>
 <v-layout>
   <v-flex>
-    <h1>Home Page</h1>
+    <img src="~/static/stupidface.jpg" style="max-width: 50%;">
+    <h3 style="">Sup' Ladies.</h3>
   </v-flex>
 </v-layout>
 </template>
@@ -10,8 +11,6 @@
 
 export default {
   async asyncData({ app }) {
-    const call = await app.$axios.$get('http://localhost:3000')
-    return { call }
   },
   components: {
 
